@@ -13,3 +13,10 @@ if(close){
     })
 }
 
+const cartButtons = document.querySelectorAll("#addtocart"); 
+cartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        button.style.display = "none"; 
+    });
+});
+
