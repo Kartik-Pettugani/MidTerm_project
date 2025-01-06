@@ -9,7 +9,7 @@
 </head>
 <body>
     <section id="header">
-        <a href="#"><img src="img/logo.png"  class="logo" ></a>
+        <a href="#" onclick="window.location.href='index.html'"><img src="img/logo.png"  class="logo" ></a>
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html" onclick="window.location.href='index.html'">Home</a></li>
@@ -17,7 +17,7 @@
                 <li><a href="blog.html" onclick="window.location.href='blog.html'">Blog</a></li>
                 <li><a href="about.html" onclick="window.location.href='about.html'">About</a></li>
                 <li><a href="contact.html" onclick="window.location.href='contact.html'">Contact</a></li>
-                <li><a id="lg-bag" href="cart.html" onclick="window.location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a id="lg-bag" href="cart.html" onclick="window.location.href='cart.html'"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
         </div>
@@ -32,7 +32,7 @@
         <h2>Super value Deals</h2>
         <h1>On all products</h1>
         <p>Save more with coupons & upto 70% off</p>
-        <button>Shop Now</button>
+        <button onclick="window.location.href='shop.html'">Shop Now</button>
     </section>
 
     <section id="feature" class="section-p1">
@@ -207,7 +207,7 @@
 
     <section id="banner" class="section-m1">
     <h2>Upto <span>70% off</span> - All T-shirts and Accessories</h2>
-    <button class="normal">Explore More</button>
+    <button class="normal" onclick="window.location.href='shop.html'">Explore More</button>
     </section>
    
     <section id="product1" class="section-p1">
@@ -441,5 +441,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>

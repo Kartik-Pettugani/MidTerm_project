@@ -23,7 +23,7 @@
           <li>
             <a id="lg-bag" href="cart.html"
               ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            ><span id="cart-count">0</span></a>
           </li>
           <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
         </ul>
@@ -53,8 +53,8 @@
             </div>
         </div>
         <div class="single-pro-details">
-            <h6>Home/Sweatshirts</h6>
-            <h4>Ombre: Classic Brown</h4>
+            <h6>Home/Mean Cargo Pants</h6>
+            <h4>Solid: Gator Green</h4>
             <h2>₹ 1999</h2>
             <select >
                 <option value="Select Size"></option>
@@ -63,8 +63,13 @@
                 <option value="Large"></option>
                 <option value="XL"></option>
             </select>
-            <input type="number" value="1">
-            <button class="normal">Add To Cart</button>
+            <input type="number" value="1" min="1/">
+            <button class="normal" onclick="addToCart(
+              'Men Cargo Pants', 
+              'Solid: Gator Green', 
+              1999, 
+              'img/products/p1.png'
+          )">Add To Cart</button>
             <h4>Product Details</h4>
             <span> 100% Acrylic Machine Wash</span>
         </div>
@@ -205,7 +210,7 @@
       </div>
     </footer>
 
-    <script>
+    <script >
         var MainImg = document.getElementById("MainImg")
         var smallImg = document.getElementsByClassName("small-img")
         smallImg[0].onclick = function(){
@@ -221,5 +226,6 @@
             MainImg.src = smallImg[3].src
         }
     </script>
+    <script src="cart.js"></script>
   </body>
 </html>

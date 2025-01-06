@@ -12,7 +12,7 @@
   </head>
   <body>
     <section id="header">
-      <a href="#"><img src="img/logo.png" class="logo" /></a>
+      <a href="#" onclick="window.location.href='index.html'"><img src="img/logo.png" class="logo" /></a>
       <div>
         <ul id="navbar">
           <li><a href="index.html">Home</a></li>
@@ -23,7 +23,7 @@
           <li>
             <a class="active" id="lg-bag" href="cart.html"
               ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            ><span id="cart-count">0</span></a>
           </li>
           <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
         </ul>
@@ -51,145 +51,31 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f1.png" alt=""></td>
-                <td>Ombre: Classic Brown</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f2.png" alt=""></td>
-                <td>The Godfather: Honor</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f3.png" alt=""></td>
-                <td>Quilted Jacket: Snow Storm</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f4.png" alt=""></td>
-                <td>Isro: Above And Beyond</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f5.png" alt=""></td>
-                <td>Reversible Puffer: Batman Gotham city</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f6.png" alt=""></td>
-                <td>One Piece: Pirates</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f7.png" alt=""></td>
-                <td>Denim Jacket: Artic</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/f8.png" alt=""></td>
-                <td>Cable Knit Pullover: Ocean Dune</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p1.png" alt=""></td>
-                <td>Solid: Gator Green</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p2.png" alt=""></td>
-                <td>Punisher: Charcoal Denim</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p1.png" alt=""></td>
-                <td>Cable Knit Pullover: Ocean Dune</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p3.png" alt=""></td>
-                <td>Slub Shorts: Light Biege</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p4.png" alt=""></td>
-                <td>Baggy Cargo Denims: Artic</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p5.png" alt=""></td>
-                <td>Solid: Black Cargo</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p6.png" alt=""></td>
-                <td>Charcoal Grey Cargos</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p7.png" alt=""></td>
-                <td>Korean Joggers: Sepia</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
-              <tr>
-                <td><a href="#"><i class="fa-solid fa-x"></i></a></td>
-                <td><img src="img/products/p8.png" alt=""></td>
-                <td>Denim: Granite Grey</td>
-                <td>₹ 1999</td>
-                <td><input type="number" value="1"></td>
-                <td>₹ 1999</td>
-              </tr>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
             </tbody>
         </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cart-subtotal">₹ 0</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td id="cart-shipping">₹ 0</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="cart-total"><strong>₹ 0</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
     </section>
 
     <footer class="section-p1">
@@ -238,5 +124,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', updateCartDisplay);
+    </script>
+    <script src="cart.js"></script>
   </body>
 </html>

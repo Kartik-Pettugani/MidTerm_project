@@ -12,7 +12,7 @@
   </head>
   <body>
     <section id="header">
-      <a href="#"><img src="img/logo.png" class="logo" /></a>
+      <a href="#" onclick="window.location.href='index.html'"><img src="img/logo.png" class="logo" /></a>
       <div>
         <ul id="navbar">
           <li><a href="index.html">Home</a></li>
@@ -23,7 +23,7 @@
           <li>
             <a id="lg-bag" href="cart.html"
               ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            ><span id="cart-count">0</span></a>
           </li>
           <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
         </ul>
@@ -49,7 +49,7 @@
       <div>
         <h2>Who We Are?</h2>
         <p>
-          At [Platform Name], we’re passionate about bringing you the latest
+          At Divinite, we’re passionate about bringing you the latest
           trends in clothing and accessories that reflect your unique style.
           Founded with a mission to make fashion accessible, we pride ourselves
           on offering high-quality, affordable pieces for every occasion. Our
@@ -159,5 +159,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

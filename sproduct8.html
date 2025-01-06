@@ -20,10 +20,11 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a id="lg-bag" href="cart.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+          <li id="lg-bag">
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
           </li>
           <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
         </ul>
@@ -54,19 +55,24 @@
         </div>
         <div class="single-pro-details">
             <h6>Home/Sweatshirts</h6>
-            <h4>Ombre: Classic Brown</h4>
+            <h4>Cable Knit Pullover: Ocean Dune</h4>
             <h2>₹ 1999</h2>
-            <select >
-                <option value="Select Size"></option>
-                <option value="Small"></option>
-                <option value="Medium"></option>
-                <option value="Large"></option>
-                <option value="XL"></option>
+            <select>
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
             </select>
-            <input type="number" value="1">
-            <button class="normal">Add To Cart</button>
+            <input type="number" value="1" min="1"/>
+            <button class="normal" onclick="addToCart(
+                'Oversized Pullover', 
+                'Cable Knit Pullover: Ocean Dune', 
+                1999, 
+                'img/products/f8.png'
+            )">Add To Cart</button>
             <h4>Product Details</h4>
-            <span> 100% Acrylic Machine Wash</span>
+            <span>100% Acrylic Machine Wash</span>
         </div>
 
     </section>
@@ -221,5 +227,12 @@
             MainImg.src = smallImg[3].src
         }
     </script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartCount();
+        });
+    </script>
+    <script src="cart.js"></script>
   </body>
 </html>
